@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.center {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
+
+/* navbar */
+nav {
+  position: sticky !important;
+  top: 0px;
+  z-index: 10;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.nav-link {
+  opacity: 0.7;
+  color: white;
+}
+
+.navbar-custom {
+  background-color: #26547c;
+
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  background-color: #1c3f5f;
+  color: white;
+  text-decoration: underline;
+}
+
+.container-fluid {
+  background-color: #26547c;
+  color: #ffffff;
+}
+
+.container-fluid img {
+  border-radius: 50%;
+}
+
+.scale-button:hover {
+  transform: scale(0.9);
+  /* Scale the button up by 10% */
+}
+
+/* Start Header for Our Services Page */
+.three {
+  background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(6, 5, 5, 0.8)), url(https://www.collegetransitions.com/wp-content/uploads/2014/05/shutterstock_789412672-1200x675.jpg);
+  width: 100%;
+  height: 35rem;
+  background-size: cover;
+  text-align: center;
+}
+
+.three h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: white;
+  padding-top: 13rem;
+}
+
+.three h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* header ending */
+/* Services page */
+
+/* Our services page */
+.servi {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0ebf5;
+  margin-bottom: none;
+  margin-right: 0.5rem;
+  margin-left: 0.3rem;
+}
+
+::selection {
+  background: #e0ebf5;
+  color: #fff;
+}
+
+
+
+
+
+.container {
+  background: #fff;
+  margin: 0 0px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.container .topic {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .list {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 50px;
+  position: relative;
+}
+
+.content .list label {
+  height: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 25px;
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 5;
+}
+
+#home:checked~.list label.home,
+#blog:checked~.list label.blog,
+#help:checked~.list label.help,
+#code:checked~.list label.code,
+{
+color: #fff;
+}
+
+.content .list label:hover {
+  color: #e0ebf5;
+}
+
+.content .slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #26547c;
+  transition: all 0.4s ease;
+}
+
+#home:checked~.list .slider {
+  top: 0;
+}
+
+#blog:checked~.list .slider {
+  top: 60px;
+}
+
+#help:checked~.list .slider {
+  top: 120px;
+}
+
+#code:checked~.list .slider {
+  top: 180px;
+}
+
+.content .text-content {
+  width: 80%;
+  height: 100%;
+}
+
+.content .text {
+  display: none;
+}
+
+.content .text .title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.content .text p {
+  text-align: justify;
+}
+
+.content .text-content .home {
+  display: block;
+}
+
+#home:checked~.text-content .home,
+#blog:checked~.text-content .blog,
+#help:checked~.text-content .help,
+#code:checked~.text-content .code,
+#about:checked~.text-content .about {
+  display: block;
+}
+
+#blog:checked~.text-content .home,
+#help:checked~.text-content .home,
+#code:checked~.text-content .home,
+#about:checked~.text-content .home {
+  display: none;
+}
+
+.content input {
+  display: none;
+}
+
+/* About us */
+.Price {
+  background-color: whitesmoke;
+}
+
+.period {
+  color: #e0ebf5;
+}
+
+
+.Price img {
+  width: 23rem;
+  height: 23rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.Price h2 {
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  font-size: 2.5rem;
+}
+
+.Price p {
+  color: black;
+  text-align: left;
+  font-weight: 400;
+  padding-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+
+/* This is the testimonials  */
+body {
+  background: #e0ebf5;
+  font-family: montserrat;
+}
+
+section {
+  padding-bottom: 1rem !important;
+}
+
+.section-header {
+  position: relative;
+  text-align: center;
+  font-weight: 900;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.section-header:after {
+  content: '';
+  height: 3px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  background: #fff;
+}
+
+.section-header span {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+
+
+.testimonials {
+  max-width: 1000px;
+  padding: 0 10px 25px;
+  text-align: center !important;
+}
+
+.single-item {
+  background: #fff;
+  color: #111;
+  padding: 15px;
+  margin: 50px 15px;
+}
+
+.profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.img-area {
+  margin: 0 15px 15px 15px;
+}
+
+.img-area img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 7px solid #26547c;
+}
+
+.content {
+  font-size: 18px;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.content p span {
+  font-size: 48px;
+  margin-right: 20px;
+  color: #26547c;
+}
+
+.socials i {
+  margin-right: 25px;
+}
+
+.bio h4 {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #26547c;
+}
+
+
+
+
+
+/* This is the footing section */
+
+
+.Serviceslinkcolor{
+  color: #000000;
+}
+.linkfooterservices{
+  color: #000000;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, #e6a819, #FFD166);
+  color: #000000;
+  padding-top: 5rem;
+  border-top-left-radius: 100px;
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.navbar a {
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.navbar a:hover {
+  transform: translateY(-5px); /* Adjust the value to your liking */
+}
+/* End of footing section */
