@@ -47,8 +47,11 @@ nav {
 }
 
 .navbar-custom {
-  background-color: #26547c;
+  background-color: #081e3f;
 
+}
+.navbar-toggler{
+  background-color: #e0ebf5 ;
 }
 
 .navbar-toggler-icon {
@@ -57,20 +60,20 @@ nav {
 
 .nav-link:hover {
   opacity: 1;
-  background-color: #1c3f5f;
+  background-color: #0b254c;
   color: white;
   text-decoration: underline;
 }
 
 .container-fluid {
-  background-color: #26547c;
+  background-color: #081e3f;
   color: #ffffff;
 }
 
 .container-fluid img {
   border-radius: 50%;
 }
-.
+
 
 .scale-button:hover {
   transform: scale(0.9);
@@ -1396,16 +1399,27 @@ ul {
   list-style-type: none;
   text-align: left;
 }
+.underlinefooter{ 
+  color: #fc0;
+  text-decoration: underline
+  
+}
+
+
+.suscribegroup{
+  font-size: 17px;
+  color: white ;
+}
 
 footer {
   width: 100%;
   position: relative;
-  background: linear-gradient(to right, #e6a819, #FFD166);
+  background: linear-gradient(to right, #081e3f, #081e3f);
   color: #000000;
   padding-top: 5rem;
   border-top-left-radius: 100px;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 1.1;
   padding-left: 5rem;
   padding-right: 5rem;
 }
@@ -1415,20 +1429,20 @@ footer {
   display: flex;
   justify-content: center;
 }
-
-
-
+.footercolor{
+ color: white;
+}
 .spr {
   text-align: center;
 }
 .Serviceslinkcolor{
-  color: #000000;
+  color: #ffffff;
 }
 .linkfooterservices{
-  color: #000000;
+  color: #fc0;
 }
 .linkfooterservices1{
-  color: #000000;
+  color: #ffffff;
   text-decoration: underline;
 }
 a:link {
@@ -1436,9 +1450,16 @@ a:link {
 }
 a:hover {
   text-decoration: underline;
-  color: #000000;
+  color: #fc0;
 }
 
+a.suscribegroup:link{
+  text-decoration-color: white;
+}
+
+.Indentaway{
+  padding-left: 0rem;
+}
 /* End of footing section */
 
 .Colorforinfoheader{
@@ -1529,32 +1550,32 @@ button {
 }
 
 .Colorlinkgala{
-  color:black !important;
+  color:white !important;
   font-weight: 400;
   font-size: 1.2rem;
 }
 .Colorlinkgala a {
-  color: #000000;
+  color: #ffffff;
 }
 .Gala{
-  background: rgb(255,209,102);
-  background: linear-gradient(90deg, rgb(255 223 100) 85%, rgba(38,84,124,1) 85%);
-  border-style: double;
-  border-width: 10px;
+  background: rgb(14 57 89);
+  border-style: solid;
+  border-width: 5px;
   border-radius: 10px;
   padding-top: 4rem;
   margin-top: 6rem;
   padding-bottom: 2rem;
+  color: #e43f65;
 }  
 .Gala h2 {
   text-align: center;
   font-weight: 700;
-  color: black;
+  color: white;
   font-size: 2.5rem;
 }
 
 .Gala p {
-  color: black;
+  color: white;
   text-align: left;
   font-weight: 400;
   padding-bottom: 3rem;
